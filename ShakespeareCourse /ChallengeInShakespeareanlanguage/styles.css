@@ -1,0 +1,187 @@
+/*documentFonts*/
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700&display=swap');
+
+:root{
+    --MainColor:#CC2E36;
+    --BoxBorderWidth: 5px;
+    --paddingSize:1em;
+}
+body{
+    direction: rtl;
+    font-family: 'Heebo', sans-serif;
+    margin: 0px;
+}
+
+p{
+    font-size: 1.3em;
+    font-weight: 400;
+    word-spacing: 0.16em;
+}
+
+.backgroundImg{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+.background_ParallaxEffect {
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    }
+.screen{
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+strong{
+    color:var(--MainColor);
+}
+
+.GridLayout{
+    display: grid;
+}
+.GridLayout.equal2ChildWidth{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flyBox{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 0em 1.2em;
+}
+
+.centerBox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    WIDTH: fit-content;
+    PADDING: 1EM;
+}
+
+.box50presentWidth{
+    width: 50%;
+    max-width: 30em;
+}
+
+.BoxTopBorder{
+    border-top: var(--MainColor) solid var(--BoxBorderWidth);
+}
+.BoxBottomBorder{
+    border-bottom: var(--MainColor) solid var(--BoxBorderWidth);
+}
+
+.textCenter{
+    text-align: center;
+}
+
+p.spanAsNewline span:not(.notNewLine){
+    display: block;
+}
+
+.blockSpacing{
+    padding: 10%;
+}
+
+.GridLayout.textNextToImg2for1{
+    grid-template-columns: 2fr 1fr;
+    padding: 5%;
+    gap: 5%;
+    align-items: center;
+}
+
+.Bookmark{
+    height: 100%;
+    position: absolute;
+    background: var(--MainColor);
+    width: 2em;
+}
+
+.right{
+    right: 0px;
+}
+
+.bigFont{
+    font-size: 1.8em;
+}
+.paddingAll{
+    padding: var(--paddingSize);
+}
+
+.imgWithCation{
+    position: relative;
+}
+
+.imgWithCation img{
+    height: 60vh;
+}
+
+.caption, .imgWithCation p{
+    font-size: 0.8em;
+    width: 60%;
+    position: absolute;
+    margin: 0px;
+}
+
+.imgWithCation.small img{
+    height: 40vh;
+}
+.imgWithCation.center p{
+    position: relative;
+    margin: 0px auto;
+}
+
+
+.sceenFlexTemp{
+    grid-template-columns: 2fr 1fr;
+    padding: max(5%,3em);
+    gap: 5%;
+    align-items: center;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+}
+
+/*phone Version*/
+@media only screen and (max-width: 650px) and (orientation: portrait) {
+    .sceenFlexTemp{
+        flex-wrap: wrap;
+    }   
+    .imgWithCation {
+        margin: auto;
+        margin-bottom: 1em;
+    }
+}
+
+/*animations*/
+.have-scroll-animation{
+    transition: all 0.7s linear 0.2s;
+}
+
+.aniType-MoveRightToLeft{
+    opacity: 0;
+    transform: translateX(50%);
+}
+
+.aniType-MoveRightToLeft.active-enter-animation {
+    opacity: 1 ;
+    transform: translateX(0);
+}
+
+.aniType-ScaleSmallToBig{
+    opacity: 0;
+    transform: scale(0);
+}
+
+.aniType-ScaleSmallToBig.active-enter-animation {
+    opacity: 1 ;
+    transform:scale(1);
+}
+
+.aniType-Blur{
+    filter: blur(10px) opacity(0);
+}
+
+.aniType-Blur.active-enter-animation {
+    filter: blur(0) opacity(1);
+}
