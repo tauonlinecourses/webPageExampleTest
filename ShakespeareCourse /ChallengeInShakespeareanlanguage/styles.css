@@ -142,6 +142,31 @@ p.spanAsNewline span:not(.notNewLine){
     align-items: center;
 }
 
+.h3Title{
+    color: #CC2E36;
+    margin-bottom: 0.5em;
+}
+.card{
+    background-color: #ebddb6;
+    padding: 1px 2em;
+    border-radius: 5px;
+    display: inline-block;
+}
+.card p {
+    margin-top: 0.2em;
+}
+.addQeustion::before{
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    position: absolute;
+    right: 0;
+}
+.addQeustion{
+    padding-right: 1.7em;
+    position: relative;
+}
+
 /*phone Version*/
 @media only screen and (max-width: 650px) and (orientation: portrait) {
     .sceenFlexTemp{
