@@ -176,7 +176,7 @@ p.spanAsNewline span:not(.notNewLine){
 }
 
 /*phone Version*/
-@media only screen and (max-width: 650px) and (orientation: portrait) {
+@media only screen and (max-width: 650px) {
     .sceenFlexTemp{
         flex-wrap: wrap;
     }   
