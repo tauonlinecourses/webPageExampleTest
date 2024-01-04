@@ -171,9 +171,13 @@ p.spanAsNewline span:not(.notNewLine){
     width: 100%;
     position: absolute;
     background: var(--MainColor);
-    height: 2em;
+    height: 2vh;
     z-index: -1;
 }
+
+.bookmarkHorizontalPoistion1{
+    top: calc( 50% - 6em);
+}    
 
 /*phone Version*/
 @media only screen and (max-width: 650px) {
@@ -213,6 +217,10 @@ p.spanAsNewline span:not(.notNewLine){
     margin: auto;
     width: 75%;
 }
+
+    .bookmarkHorizontalPoistion1{
+    top: 20vh;
+}    
 
 }
 
