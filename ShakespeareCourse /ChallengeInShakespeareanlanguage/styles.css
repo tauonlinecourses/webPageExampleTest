@@ -184,6 +184,22 @@ p.spanAsNewline span:not(.notNewLine){
         margin: auto;
         margin-bottom: 1em;
     }
+    
+    .flyBox {
+    display: block;
+    position: relative;
+    margin: 1em auto;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    border: 0px !important;
+    width: 75% !important;
+    padding: 0.05em 1.2em;
+}
+
+.GridLayout.equal2ChildWidth {
+    grid-template-rows: 1fr 4fr;
+}
 }
 
 /*animations*/
