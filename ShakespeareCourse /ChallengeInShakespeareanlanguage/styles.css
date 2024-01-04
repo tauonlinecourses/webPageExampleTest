@@ -201,6 +201,19 @@ p.spanAsNewline span:not(.notNewLine){
     grid-template-columns: none;
     grid-template-rows: 1fr 4fr;
 }
+
+.centerBox {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transform: translate(0px,0px);
+    WIDTH: fit-content;
+    PADDING: 1EM;
+    margin: auto;
+    width: 75%;
+}
+
 }
 
 /*animations*/
