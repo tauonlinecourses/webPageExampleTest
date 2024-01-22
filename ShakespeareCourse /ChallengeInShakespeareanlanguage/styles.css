@@ -257,3 +257,26 @@ p.spanAsNewline span:not(.notNewLine){
     filter: blur(0) opacity(1);
 }
 
+/* custum scroold bar */
+        /* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #CC2E36; 
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b3272e; 
+}
+    
+
