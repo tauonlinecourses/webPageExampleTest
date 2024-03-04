@@ -59,17 +59,21 @@ window.addEventListener("resize",ScollAnimation);
               }
               ${getPresentInPage("slidAnimationTag-8",2)} {
                 height: 3.5em;
+                overflow: visible;
               }
 
               ${getPresentInPage("slidAnimationTag-9",0)} {
                 height: 3.5em;
+                overflow: hidden;
               }
 
               ${getPresentInPage("slidAnimationTag-9",2)} {
                 height: 0px;
+                overflow: hidden;
               }
               100% {
                 height: 0px;
+                overflow: hidden;
               }
           }
 
