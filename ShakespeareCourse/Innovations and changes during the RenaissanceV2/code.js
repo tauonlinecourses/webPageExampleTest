@@ -61,8 +61,15 @@ window.addEventListener("resize",ScollAnimation);
                 height: 3.5em;
               }
 
-              100% {
+              ${getPresentInPage("slidAnimationTag-9",0)} {
                 height: 3.5em;
+              }
+
+              ${getPresentInPage("slidAnimationTag-9",2)} {
+                height: 0px;
+              }
+              100% {
+                height: 0px;
               }
           }
 
