@@ -36,6 +36,9 @@ strong {
 a {
     color: var(--MainColor);
 }
+.textJustify {
+    text-align: justify;
+}
 
 /*lists*/
 ul,
