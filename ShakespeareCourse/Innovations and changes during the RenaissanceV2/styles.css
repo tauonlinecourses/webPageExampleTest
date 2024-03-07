@@ -216,7 +216,11 @@ p.spanAsNewline span:not(.notNewLine) {
 
 .h3Spacing {
     display: inline-block;
-    padding: 3px 5px 0px 5px;
+    padding: 3px 20px 0px 20px;
+}
+
+.backgroundImg h3.redBoxText.h3Spacing {
+    box-shadow: 0px 0px 70px 6PX #000000f7;
 }
 
 .redBoxText {
