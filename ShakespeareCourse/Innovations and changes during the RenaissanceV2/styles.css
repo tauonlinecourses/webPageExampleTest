@@ -616,9 +616,17 @@ p.spanAsNewline span:not(.notNewLine) {
             background: #b3272e; 
           }
               
+        .flexRowWidthScreenOnly{
+display: flex; flex-direction: row;
+}
 
 /*phone Version*/
 @media only screen and (max-width: 720px) {    
+
+    .flexRowWidthScreenOnly{
+flex-direction: column;
+}
+    
     #myNav {
         font-size: 1em;
     }
