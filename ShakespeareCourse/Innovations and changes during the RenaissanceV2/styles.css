@@ -107,6 +107,13 @@ ul li::marker {
 .twoGrid {
     grid-template-columns: 1fr 1fr;
 }
+
+.grid2Uniq>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 /*positionForElements*/
 .flyBox {
     position: absolute;
