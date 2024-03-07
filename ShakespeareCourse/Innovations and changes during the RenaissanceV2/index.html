@@ -10,6 +10,15 @@
 </head>
 
 <body onload="start()">
+    <style>
+    @media only screen and (max-width: 880px){
+        .changeAt800px img{
+            width: 100%;
+            height: auto;
+        }
+    }
+</style>
+    
     <section id="loadingScreen" class="screen" style="position: fixed; z-index: 1000000; background: var(--MainColor); height: 100vh; width: 100vw; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 30px; color: white;">
         <span class="loader"></span>
         <span>טוען אתר</span>
@@ -103,7 +112,7 @@
     <section class="screen GridLayout equal2ChildWidth backgrayScale-1">
         <div class="blockSpacing">
             <h3 class="redBoxText h3Spacing">כלכלה ומסחר</h3>
-            <ul class="box75presentWidth">
+            <ul class="box75presentWidth textJustify">
                 <li>
                     מעמד הסוחרים עולה
                 </li>
@@ -159,8 +168,78 @@
             </strong>, מפת העולם משנת 1531
         </div>
     </section>
+<section class="screen blockSpacingSmaller">
+        <h3 class="redBoxText h3Spacing">טכנולוגיה, מדע ורפואה</h3>
+        <div class="grid2Uniq" style="display: flex;gap: 2em;text-align: justify;">
+    <div>
+            <div>
+                <div class="RightMarkBorder">בשנת 1436
+                    <strong>
+                        הדפוס
+                    </strong>
+                    מומצא ומשנה ללא היכר את אוריינות הקריאה באירופה: ציבור הקוראים הולך ומתרחב גם מעבר למעמד האצולה,
+                    שווקי
+                    ספרים הופכים נפוצים ומתפתחת כתיבה במגוון סוגות.&nbsp;
+                </div>
+            </div>
+ <div>
+                <div class="RightMarkBorder">פיתוחים
+                    <strong>
+                        בהנדסה, אדריכלות ותכנון אורבני
+                    </strong>
+                    במקביל להחייאה של שיטות בנייה רומיות עתיקות ושכלולן.&nbsp;
+                </div>
+            </div>
+    
+   <div class="imgWithCation small centerBlock changeAt800px">
+                <img src="img/Illustration2.png" alt="איור של מכונת דפוס" style="">
+                <p class="imgDiscriptionOnImg right" style="width: fit-content;">
+                    איור של מכונת דפוס
+                </p>
+            </div>
+    </div>
+    <div>
+            <div class="imgWithCation small centerBlock" style="
+    padding: 0px 50px;
+">
+                <img src="img/Newton_telescope_replica_1668.png" alt="רפליקה של הטלסקופ של ניוטון ">
+                <p class="imgDiscriptionOnImg right" style="width: fit-content;">
+                    רפליקה של הטלסקופ של ניוטון
+                </p>
+                <p style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: left;
+                /* background: #ffffff; */
+                width: 100%;
+                font-size: 0.5em;
+                " class="notChange">
+                    Newton telescope replica, by The Science Museum UK, under CC BY 4.0, via Wikimedia Commons
+                </p>
+            </div>
+           
+            <div>
+                <div class="RightMarkBorder">לקראת סוף המאה ה-16 הטלסקופ המודרני מומצא ומביא לתגליות משנות סדרי עולם
+                    <strong>באסטרונומיה,</strong> המרכזית בהן היא התגלית של קופרניקוס שכדור הארץ אינו נייח ולא נמצא במרכז היקום.&nbsp;
+                </div>
+            </div>
 
-    <section class="screen blockSpacingSmaller">
+         
+            <div>
+                <div class="RightMarkBorder">גילויים איטיים אך חשובים
+                    <strong>
+                        ברפואה
+                    </strong>
+                    בעקבות פרקטיקות חדשות באנטומיה וניתוח גופות (שהכנסייה לרוב אסרה) לצד מסורות רפואיות עתיקות יותר.&nbsp;
+                </div>
+            </div>
+</div>
+        </div>
+
+    </section>
+    
+<!--     <section class="screen blockSpacingSmaller">
         <h3 class="redBoxText h3Spacing">טכנולוגיה, מדע ורפואה</h3>
         <ul class="lineRightToList twoGrid" style="display: grid; gap: 2em; text-align: justify;">
             <li>
@@ -216,7 +295,7 @@
         </ul>
 
     </section>
-
+ -->
     <section class="screen backgroundImg background_ParallaxEffect"
         style="background-image:url('img/St.Bartholomew_Day_Massacre.jpg');">
         <h3 class="redBoxText h3Spacing" style="margin: 5%;">דת</h3>
@@ -297,7 +376,7 @@
             <div class="imgWithCation">
                 <img src="img/Illustration1.jpg" alt="  איור גרמני של שלושת המעמדות של חברת ימי הביניים (1492)"
                     >
-                <p class="imgDiscriptionOnImg" style="width: 80%; bottom: auto;">
+                <p class="imgDiscriptionOnImg" style="width: 80%; bottom: auto; left: auto;">
                     <strong>
                         "המושיע [ישוע] אומר לכהן העליון: ‘אתה - התפלל על הברכיים’; לשליט: ‘אתה - הגן’; ולאיכר: ‘ואתה -
                         עבוד’"
@@ -316,7 +395,7 @@
         <div class="bookmarkSideManu-Ditector centerBox"></div>
         <div class="flyBox have-scroll-animation aniType-MoveRightToLeft active-enter-animation"
             style="top: 20%; right: 10%; width: 70%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9);">
-            <p>
+            <p style="text-align: justify;">
                 בתקופת הרנסנס מתפתח הזרם החינוכי והאינטלקטואלי שמכונה מאוחר יותר
                 <strong>
                     "הומניזם"
@@ -492,14 +571,14 @@
     <section class="screen centerFlex  blockSpacing">
         <div>
             <h3 class="redBoxText h3Spacing">פריחה תרבותית</h3>
-            <div style="position: relative;height: 30vh;">
+<!--             <div style="position: relative;height: 30vh;">
                 <div class="backgroundImg" style="background-image:url('img/Plucking_the_Red_and_White_Roses_in_the_Old_Temple_Gardens.jpg');background-position-y: 30%;" alt="Portrait of William Shakespeare, Martin Droeshout (1622)">
                     <div class="imgDiscriptionOnImg">
                         Henry Payne, Plucking the Red and White Roses in the Old Temple Gardens (1908)
                     </div>
                 </div>
             </div>
-
+ -->
             <ul class="bigSpaceing">
                 <li>כבר בימי שלטונו של הנרי השביעי החל תהליך מואץ של <strong>הפריה תרבותית</strong>:&nbsp;</li>
                 <li>אנגליה הושפעה מארצות אירופה בכלל ומאיטליה בפרט;&nbsp;</li>
@@ -616,7 +695,7 @@
         style="background-image:url('img/Elizabeth_the_first_Protrait.jpg');  background-position-y: top;">
         <section class="screen" style=" background-color: transparent;">
             <h3 class="redBoxText h3Spacing" style="margin: 5%;">מלחמות דת</h3>
-            <div class="flyBox have-scroll-animation aniType-MoveRightToLeft centerX"
+            <div class="flyBox have-scroll-animation aniType-MoveRightToLeft centerX textJustify"
                 style="bottom: 40%; width: 70%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9);">
                 <p>במקביל להתפתחויות התרבותיות והחברתיות, אנגליה נחשפה בתקופה זו גם לתהפוכות הדת המטלטלות שחוללה
                     הרפורמציה של לותר.
@@ -628,7 +707,7 @@
             </div>
         </section>
         <section class="screen" style=" background-color: transparent;">
-            <div class="flyBox have-scroll-animation aniType-MoveLeftToRight"
+            <div class="flyBox have-scroll-animation aniType-MoveLeftToRight textJustify"
                 style="top: 5%; right: 10%; max-width: 35em; background-color: rgba(255, 255, 255, 0.9); width: 80%;">
                 <ul class="bigSpaceing">
                     <li>בשנת 1558 עלתה לשלטון <strong>אליזבת הראשונה</strong>, בתם של הנרי השמיני ואן בולין.<br></li>
