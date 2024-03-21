@@ -144,7 +144,7 @@ ul li::marker {
 /*sizeForElements*/
 
 .screen {
-    min-height: 100vh;
+    min-height: calc(100vh - 3em);
     position: relative;
     overflow: hidden;
     background-color: white;
