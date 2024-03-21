@@ -182,7 +182,7 @@ p.spanAsNewline span:not(.notNewLine) {
 }
 
 .blockSpacingSmaller {
-    padding: 5%;
+    padding: 1% 5%;
 }
 
 .Bookmark {
