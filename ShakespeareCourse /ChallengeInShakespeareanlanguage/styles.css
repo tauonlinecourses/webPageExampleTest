@@ -6,6 +6,7 @@
     --BoxBorderWidth: 5px;
     --paddingSize:1em;
 }
+
 body{
     direction: rtl;
     font-family: 'Heebo', sans-serif;
@@ -178,6 +179,21 @@ p.spanAsNewline span:not(.notNewLine){
 .bookmarkHorizontalPoistion1{
     top: calc( 50% - 6em);
 }    
+
+
+#backToModdle{ text-decoration: none;
+    color: white;
+    background-color: var(--MainColor);
+    padding: 25px 50px;
+    font-size: 1.6em;
+    text-align: center;
+    display: block;   }
+
+#backToModdle:hover{
+    background-color:#a5262d;
+}
+    
+    
 
 /*phone Version*/
 @media only screen and (max-width: 720px) {
