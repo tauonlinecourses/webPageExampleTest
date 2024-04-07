@@ -20,6 +20,10 @@ body {
     word-spacing: 0.16em;
 }
 
+p, ul {
+    max-width: 700px;
+}
+
 h2 {
     color: var(--MainColor);
 }
@@ -102,6 +106,7 @@ ul li::marker {
     display: flex;
     gap: 5%;
     align-items: center;
+    justify-content: space-between;
 }
 
 .twoGrid {
