@@ -20,7 +20,7 @@ body {
     word-spacing: 0.16em;
 }
 
-p, ul {
+p, ul,ol {
     max-width: 700px;
 }
 
