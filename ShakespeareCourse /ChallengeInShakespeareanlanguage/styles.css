@@ -181,16 +181,20 @@ p.spanAsNewline span:not(.notNewLine){
 }    
 
 
-#backToModdle{ text-decoration: none;
+/*Reminder if we want to bring this back - An element with this tag was a banner at the bottom of the page, and the user could click on it to return to the middle of the page. However, we removed it because every year someone would need to update it.*/
+/* #backToModdle{ text-decoration: none;
     color: white;
-    background-color: var(--MainColor);
+    background-color: var(--MainColorDarker);
     padding: 25px 50px;
     font-size: 1.6em;
     text-align: center;
     display: block;   }
 
 #backToModdle:hover{
-    background-color:#a5262d;
+    background-color:var(--MainColor);
+} */
+#backToModdle{
+display: none;
 }
     
     
