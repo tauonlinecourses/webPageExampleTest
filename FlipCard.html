@@ -24,7 +24,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus-visible .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -58,7 +58,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 ">
-<div class="flip-card">
+<div class="flip-card" tabindex="0">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://www.w3schools.com/HOWTO/img_avatar.png" alt="Avatar" style="width: 100%;height: 100%;">
@@ -71,7 +71,7 @@ body {
   </div>
 </div>
 
-<div class="flip-card">
+<div class="flip-card" tabindex="0">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://www.w3schools.com/HOWTO/img_avatar.png" alt="Avatar" style="width: 100%;height: 100%;">
@@ -84,7 +84,7 @@ body {
   </div>
 </div>
 
-<div class="flip-card">
+<div class="flip-card" tabindex="0">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <img src="https://www.w3schools.com/HOWTO/img_avatar.png" alt="Avatar" style="width: 100%;height: 100%;">
