@@ -5,7 +5,7 @@
     --MainColor: #CC2E36;
     --BoxBorderWidth: 5px;
     --paddingSize: 1em;
-    --smallFont: 0.6em;
+    --smallFont: 0.7em;
     --SideManuWidth: clamp(150px, 20vw, 400px);
 
     --scroll: 0;
